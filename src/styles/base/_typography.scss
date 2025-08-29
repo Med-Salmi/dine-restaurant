@@ -1,0 +1,71 @@
+@use "variables" as var;
+
+// Global base styles
+body {
+  font-family: var.$font-family-league-spartan;
+  font-weight: var.$font-weight-regular;
+  font-size: var.$font-size-base;
+  line-height: 1.5;
+}
+
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var.$font-family-league-spartan;
+}
+
+h1 {
+  font-weight: var.$font-weight-light;
+  font-size: $font-size-xxl;
+  line-height: $line-height-h1;
+  letter-spacing: $letter-spacing-h1;
+}
+
+h2 {
+  font-weight: var.$font-weight-bold;
+  font-size: $font-size-xl;
+  line-height: $line-height-h2;
+  letter-spacing: $letter-spacing-h2;
+}
+
+h3 {
+  font-weight: var.$font-weight-bold;
+  font-size: $font-size-lg;
+  line-height: $line-height-h3;
+  letter-spacing: $letter-spacing-h3;
+}
+
+h4 {
+  font-weight: var.$font-weight-semi-bold;
+  font-size: var.$font-size-md;
+  line-height: $line-height-h4;
+  letter-spacing: $letter-spacing-h4;
+}
+
+// Buttons
+button {
+  font-size: var.$font-size-md;
+  font-weight: var.$font-weight-semi-bold;
+  line-height: $line-height-button;
+  letter-spacing: $letter-spacing-button;
+}
+
+// Labels
+label {
+  font-size: var.$font-size-lg;
+  font-weight: var.$font-weight-regular;
+  line-height: $line-height-label;
+  letter-spacing: $letter-spacing-label;
+}
+
+// Footer
+footer {
+    font-size: $font-size-sm;
+    font-weight: $font-weight-regular;
+    line-height: $line-height-footer;
+    letter-spacing: $letter-spacing-footer;
+}

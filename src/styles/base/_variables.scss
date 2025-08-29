@@ -1,0 +1,47 @@
+// Colors
+$color-beaver: #9e7f66;
+$color-cod-gray: #111111;
+$color-mirage: #17192b;
+$color-ebony-clay: #242b37;
+$color-shuttle-gray: #5c6779;
+
+// Typography
+$font-family-league-spartan: "League Spartan", sans-serif;
+
+// Font sizes
+$font-size-xxl: clamp(2rem, 0.944rem + 4.507vw, 5rem); // 32 => 80
+$font-size-xl: clamp(2rem, 1.648rem + 1.502vw, 3rem); // 32 => 48
+$font-size-lg: 1.25rem; // 20
+$font-size-md: 1.0625rem; // 17
+$font-size-base: clamp(1rem, 0.912rem + 0.376vw, 1.25rem); // 16 => 20
+$font-size-sm: 0.875rem; // 14
+
+// Font Weights
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+
+// Line heights
+$line-height-h1: clamp(2.5rem, 1.62rem + 3.756vw, 5rem);
+$line-height-h2: clamp(2.5rem, 2.324rem + 0.751vw, 3rem);
+$line-height-h3: 1.5rem;
+$line-height-h4: 1.75rem;
+$line-height-button: 1rem;
+$line-height-label: 1.75rem;
+$line-height-footer: 1.75rem;
+
+//Letter spacing
+$letter-spacing-h1: clamp(-0.025rem, -0.032rem + 0.028vw, -0.006rem);
+$letter-spacing-h2: clamp(-0.031rem, -0.033rem + 0.009vw, -0.025rem);
+$letter-spacing-h3: -0.0156rem;
+$letter-spacing-h4: 0.1563rem;
+$letter-spacing-button: 0.1563rem;
+$letter-spacing-label: 0rem;
+$letter-spacing-footer: 0.125rem;
+
+// Spacing
+$section-padding-side: clamp(1.5rem, -1.603rem + 13.239vw, 10.313rem);
+
+// Breakpoints
+$breakpoint-desktop: 768px;
