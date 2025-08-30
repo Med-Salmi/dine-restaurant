@@ -1,4 +1,4 @@
-@import 'variables'; 
+@import "variables";
 
 // Body
 body {
@@ -32,9 +32,14 @@ label {
   @include typography($label-text);
 }
 
+//Buttons
+button {
+  @include typography($button-text);
+}
+
 // Links
 a {
-  @include typography($body-base);
+  @include typography($link-text);
   text-decoration: none;
   color: inherit;
 }

@@ -9,7 +9,7 @@ export function initHero() {
             <img src="${logoImg}" alt="Dine Restaurant Logo">
           </a>
 
-          <h1 id="hero-title" class="hero__headline">Exquisite dining since 1989</h1>
+          <h1 id="hero-title" class="hero__headline">Exquisite dining <br> since 1989</h1>
 
           <p class="hero__text">
             Experience our seasonal menu in beautiful country surroundings. 

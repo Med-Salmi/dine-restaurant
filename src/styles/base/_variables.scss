@@ -4,6 +4,7 @@ $color-cod-gray: #111111;
 $color-mirage: #17192b;
 $color-ebony-clay: #242b37;
 $color-shuttle-gray: #5c6779;
+$color-neutral: #ffffff;
 
 // FONT FAMILY
 $font-family-league-spartan: "League Spartan", sans-serif;
@@ -42,7 +43,6 @@ $section-padding-sides: clamp(1.5rem, -1.603rem + 13.239vw, 10.313rem);
 
 // LOGO SIZE
 $logo-width: clamp(5.15rem, 4.697rem + 1.934vw, 6.438rem);
-$logo-height: clamp(2.5rem, 2.676rem - 0.751vw, 2rem);
 
 // Sections max width
 $max-content-width: 1200px; // example value
@@ -90,12 +90,15 @@ $body-base: (
 );
 
 // UI ELEMENT TYPOGRAPHY TOKENS
-$button-text: (
+$interactive-text: (
   font-size: $font-size-md,
   line-height: $line-height-tight,
   letter-spacing: $letter-spacing-wide,
   font-weight: $font-weight-semi-bold,
 );
+
+$button-text: $interactive-text;
+$link-text: $interactive-text;
 
 $label-text: (
   font-size: $font-size-lg,
