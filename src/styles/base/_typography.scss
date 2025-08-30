@@ -1,71 +1,40 @@
-@use "variables" as var;
+@import 'variables'; 
 
-// Global base styles
+// Body
 body {
-  font-family: var.$font-family-league-spartan;
-  font-weight: var.$font-weight-regular;
-  font-size: var.$font-size-base;
-  line-height: 1.5;
+  @include typography($body-base);
 }
 
 // Headings
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var.$font-family-league-spartan;
-}
-
 h1 {
-  font-weight: var.$font-weight-light;
-  font-size: $font-size-xxl;
-  line-height: $line-height-h1;
-  letter-spacing: $letter-spacing-h1;
+  @include typography($heading-xxl);
 }
 
 h2 {
-  font-weight: var.$font-weight-bold;
-  font-size: $font-size-xl;
-  line-height: $line-height-h2;
-  letter-spacing: $letter-spacing-h2;
+  @include typography($heading-xl);
 }
 
 h3 {
-  font-weight: var.$font-weight-bold;
-  font-size: $font-size-lg;
-  line-height: $line-height-h3;
-  letter-spacing: $letter-spacing-h3;
+  @include typography($heading-lg);
 }
 
 h4 {
-  font-weight: var.$font-weight-semi-bold;
-  font-size: var.$font-size-md;
-  line-height: $line-height-h4;
-  letter-spacing: $letter-spacing-h4;
+  @include typography($heading-md);
 }
 
-// Buttons
-button {
-  font-size: var.$font-size-md;
-  font-weight: var.$font-weight-semi-bold;
-  line-height: $line-height-button;
-  letter-spacing: $letter-spacing-button;
+// Paragraphs
+p {
+  @include typography($body-base);
 }
 
 // Labels
 label {
-  font-size: var.$font-size-lg;
-  font-weight: var.$font-weight-regular;
-  line-height: $line-height-label;
-  letter-spacing: $letter-spacing-label;
+  @include typography($label-text);
 }
 
-// Footer
-footer {
-    font-size: $font-size-sm;
-    font-weight: $font-weight-regular;
-    line-height: $line-height-footer;
-    letter-spacing: $letter-spacing-footer;
+// Links
+a {
+  @include typography($body-base);
+  text-decoration: none;
+  color: inherit;
 }
