@@ -115,14 +115,16 @@ $footer-text: (
 );
 
 // MIXINS
+@use "sass:map";
+
 @mixin typography($token) {
-  font-size: map-get($token, font-size);
-  line-height: map-get($token, line-height);
-  letter-spacing: map-get($token, letter-spacing);
-  font-weight: map-get($token, font-weight);
+  font-size: map.get($token, font-size);
+  line-height: map.get($token, line-height);
+  letter-spacing: map.get($token, letter-spacing);
+  font-weight: map.get($token, font-weight);
 
   // Optional: include font-family if defined
-  @if map-has-key($token, font-family) {
-    font-family: map-get($token, font-family);
+  @if map.has-key($token, font-family) {
+    font-family: map.get($token, font-family);
   }
 }

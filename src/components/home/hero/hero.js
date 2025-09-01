@@ -1,12 +1,11 @@
 import "./hero.scss";
-import logoImg from "/public/logo.svg";
 
 export function initHero() {
   const heroHTML = `
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero__container max-content-width">
           <a href="/" class="hero__logo">
-            <img src="${logoImg}" alt="Dine Restaurant Logo">
+            <img src="/logo.svg" alt="Dine Restaurant Logo">
           </a>
 
           <h1 id="hero-title" class="hero__headline">Exquisite dining <br> since 1989</h1>

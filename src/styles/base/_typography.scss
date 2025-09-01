@@ -1,45 +1,45 @@
-@import "variables";
+@use "variables" as var;
 
 // Body
 body {
-  @include typography($body-base);
+  @include var.typography(var.$body-base);
 }
 
 // Headings
 h1 {
-  @include typography($heading-xxl);
+  @include var.typography(var.$heading-xxl);
 }
 
 h2 {
-  @include typography($heading-xl);
+  @include var.typography(var.$heading-xl);
 }
 
 h3 {
-  @include typography($heading-lg);
+  @include var.typography(var.$heading-lg);
 }
 
 h4 {
-  @include typography($heading-md);
+  @include var.typography(var.$heading-md);
 }
 
 // Paragraphs
 p {
-  @include typography($body-base);
+  @include var.typography(var.$body-base);
 }
 
 // Labels
 label {
-  @include typography($label-text);
+  @include var.typography(var.$label-text);
 }
 
-//Buttons
+// Buttons
 button {
-  @include typography($button-text);
+  @include var.typography(var.$button-text);
 }
 
 // Links
 a {
-  @include typography($link-text);
+  @include var.typography(var.$link-text);
   text-decoration: none;
   color: inherit;
 }

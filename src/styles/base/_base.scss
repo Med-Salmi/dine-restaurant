@@ -12,6 +12,11 @@ a {
   color: inherit;
 }
 
+//Paragraphs
+p {
+  max-width: 65ch;
+}
+
 // Buttons (baseline style)
 button {
   cursor: pointer;
