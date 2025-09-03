@@ -5,6 +5,7 @@
 }
 
 .highlights__container {
+  padding-inline: var.$section-padding-sides;
   padding-top: 75px;
   padding-bottom: 102px;
   display: flex;
@@ -88,5 +89,37 @@
 @media (min-width: 1025px) {
   .highlights__container {
     padding-top: 203px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .highlights__container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .highlights__header {
+    align-items: flex-start;
+  }
+
+  .highlights__title,
+  .highlights__intro {
+    text-align: start;
+  }
+
+  .highlights__divider {
+    margin-bottom: 58px;
+  }
+
+  .highlights__title {
+    margin-bottom: 27px;
+  }
+
+  .highlights__card {
+    gap: 62px;
+  }
+
+  .highlights__cards {
+    margin-top: 130px;
   }
 }
