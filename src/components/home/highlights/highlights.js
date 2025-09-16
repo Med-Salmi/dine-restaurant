@@ -1,6 +1,7 @@
 import "./highlights.scss";
 
-export function initHighlights() {
+// DOM template
+function renderHighlightsSection() {
   const highlightsHTML = `
     <section class="highlights" aria-labelledby="highlights-title">
       <div class="highlights__container max-content-width">
@@ -126,4 +127,9 @@ export function initHighlights() {
 
   const main = document.querySelector("main");
   main.insertAdjacentHTML("beforeend", highlightsHTML);
+}
+
+// Initialization
+export function initHighlights() {
+  renderHighlightsSection();
 }

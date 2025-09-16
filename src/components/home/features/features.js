@@ -1,6 +1,7 @@
 import "./features.scss";
 
-export function initFeatures() {
+// DOM template
+function renderFeaturesSection() {
   const featuresHTML = `
     <section class="features">
       <div class="features__container max-content-width">
@@ -23,7 +24,8 @@ export function initFeatures() {
 
             <h2 class="features__title">Enjoyable place <br> for all the family</h2>
             <p class="features__description">
-              Our relaxed surroundings make dining with us a great experience for everyone. We can even arrange a tour of the farm before your meal.
+              Our relaxed surroundings make dining with us a great experience for everyone. 
+              We can even arrange a tour of the farm before your meal.
             </p>
           </div>
         </div>
@@ -46,7 +48,8 @@ export function initFeatures() {
 
             <h2 class="features__title">The most locally <br> sourced food</h2>
             <p class="features__description">
-              All our ingredients come directly from our farm or local fishery. So you can be sure that you’re eating the freshest, most sustainable food.
+              All our ingredients come directly from our farm or local fishery. 
+              So you can be sure that you’re eating the freshest, most sustainable food.
             </p>
           </div>
         </div>
@@ -57,4 +60,9 @@ export function initFeatures() {
 
   const main = document.querySelector("main");
   main.insertAdjacentHTML("beforeend", featuresHTML);
+}
+
+// Initialization
+export function initFeatures() {
+  renderFeaturesSection();
 }
