@@ -43,3 +43,8 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+//Footer
+footer {
+  @include var.typography(var.$footer-text);
+}

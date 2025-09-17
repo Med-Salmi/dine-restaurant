@@ -126,7 +126,6 @@ $footer-text: (
   letter-spacing: map.get($token, letter-spacing);
   font-weight: map.get($token, font-weight);
 
-  // Optional: include font-family if defined
   @if map.has-key($token, font-family) {
     font-family: map.get($token, font-family);
   }

@@ -3,6 +3,7 @@ import { initFeatures } from "./components/home/features/features.js";
 import { initHighlights } from "./components/home/highlights/highlights.js";
 import { initEvents } from "./components/home/events/events.js";
 import { initCta } from "./components/home/cta/cta.js";
+import { initFooter } from "./components/shared/footer/footer.js";
 
 export function initHome() {
   initHero();
@@ -10,4 +11,5 @@ export function initHome() {
   initHighlights();
   initEvents();
   initCta();
+  initFooter();
 }
