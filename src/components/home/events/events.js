@@ -41,7 +41,7 @@ function renderEventsSection() {
               Whether it’s a romantic dinner or special date you’re celebrating with others we’ll look after you. 
               We’ll be sure to mark your special date with an unforgettable meal.
             </p>
-            <a href="booking.html" class="events__button button">Book a Table</a>
+            <a href="booking.html" class="events__button btn">Book a Table</a>
           </div>
 
           <!-- Event Details: Social Events -->
@@ -51,7 +51,7 @@ function renderEventsSection() {
               Are you looking to have a larger social event? No problem! We’re more than happy to cater for big parties. 
               We’ll work with you to make your event a hit with everyone.
             </p>
-            <a href="booking.html" class="events__button button">Book a Table</a>
+            <a href="booking.html" class="events__button btn">Book a Table</a>
           </div>
 
         </div>

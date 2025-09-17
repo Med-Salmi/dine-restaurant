@@ -16,7 +16,7 @@ function renderHeroSection() {
           Eat the freshest produce from the comfort of our farmhouse.
         </p>
 
-        <a href="#booking" role="button" class="hero__cta btn btn--primary">Book a table</a>
+        <a href="#booking" role="button" class="hero__cta btn">Book a table</a>
       </div>
     </section>
   `;

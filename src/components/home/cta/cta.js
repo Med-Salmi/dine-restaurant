@@ -9,7 +9,7 @@ function renderCtaSection() {
           Ready to make a reservation?
         </h2>
 
-        <a href="booking.html" role="button" class="cta__button btn btn--primary">
+        <a href="booking.html" role="button" class="cta__button btn">
           Book a table
         </a>
       </div>
