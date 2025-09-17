@@ -34,6 +34,7 @@
   cursor: pointer;
   font: inherit;
   color: var.$color-neutral-dark; // default tab color
+  transition: color 0.3s ease;
 
   &--active {
     color: var.$color-neutral-darker; // active tab color
@@ -48,6 +49,12 @@
       height: 1px; // line height
       background-color: var.$color-beaver; // underline color
     }
+  }
+}
+
+.events__tab {
+  &:hover {
+    color: var.$color-neutral-darker;
   }
 }
 

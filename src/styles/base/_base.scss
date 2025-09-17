@@ -40,8 +40,8 @@ svg {
 }
 
 // Base button hover effect
-button,
-.btn {
+button:not(.events__tab),
+.btn:not(.events__tab) {
   &:hover {
     background-color: var.$color-neutral;
     color: var.$color-cod-gray;
