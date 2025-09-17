@@ -23,36 +23,34 @@
       "src/assets/images/cta/ready-bg-desktop@2x.jpg" 2x
     );
   }
-}
 
-.cta__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-inline: var.$section-padding-sides;
-  padding-top: 84px;
-  padding-bottom: 80px;
-}
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: var.$section-padding-sides;
+    padding-top: 84px;
+    padding-bottom: 80px;
 
-.cta__headline {
-  color: var.$color-neutral;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.cta__button {
-  color: var.$color-neutral;
-  padding: 1.5625rem 3.4375rem;
-  border: 1px solid var.$color-neutral;
-}
-
-@media (min-width: 1440px) {
-  .cta__container {
-    flex-direction: row;
-    justify-content: space-between;
+    @media (min-width: 1440px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 
-  .cta__headline {
-    margin-bottom: 0;
+  &__headline {
+    color: var.$color-neutral;
+    text-align: center;
+    margin-bottom: 20px;
+
+    @media (min-width: 1440px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__button {
+    color: var.$color-neutral;
+    padding: 1.5625rem 3.4375rem;
+    border: 1px solid var.$color-neutral;
   }
 }

@@ -39,7 +39,7 @@ svg {
   height: auto;
 }
 
-// Base button hover effect
+// Base button hover effect, excluding events tabs
 button:not(.events__tab),
 .btn:not(.events__tab) {
   &:hover {
