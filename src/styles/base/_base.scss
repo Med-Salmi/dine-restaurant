@@ -1,3 +1,5 @@
+@use "variables" as var;
+
 // Body layout
 body {
   min-height: 100vh;
@@ -35,4 +37,15 @@ svg {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+// Base button hover effect
+button,
+.btn {
+  &:hover {
+    background-color: var.$color-neutral;
+    color: var.$color-cod-gray;
+    border: 1px solid #000000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
 }

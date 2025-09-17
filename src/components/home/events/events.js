@@ -31,7 +31,7 @@ function renderEventsSection() {
               We love catering for entire families. So please bring everyone along for a special meal with your loved ones. 
               We’ll provide a memorable experience for all.
             </p>
-            <a href="booking.html" role="button" class="events__button button">Book a Table</a>
+            <a href="booking.html" role="button" class="events__button btn">Book a Table</a>
           </div>
 
           <!-- Event Details: Special Events -->
