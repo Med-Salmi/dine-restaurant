@@ -5,7 +5,6 @@
   background-size: cover;
   background-position: center;
   min-height: 100vh;
-
   background-image: url("/src/assets/images/booking-hero/hero-bg-mobile.jpg");
 
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -27,83 +26,86 @@
       background-image: url("/src/assets/images/booking-hero/hero-bg-desktop@2x.jpg");
     }
   }
-}
 
-.booking-hero__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-inline: var.$section-padding-sides;
-  padding-top: 56px;
-  padding-bottom: 228px;
-}
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: var.$section-padding-sides;
+    padding-top: 56px;
+    padding-bottom: 228px;
 
-.booking-hero__content-wrapper,
-.booking-hero__content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.booking-hero__logo {
-  margin-bottom: 44px;
-}
-
-.booking-hero__headline {
-  color: var.$color-neutral;
-  margin-bottom: 13px;
-}
-
-.booking-hero__text {
-  color: var.$color-neutral;
-  text-align: center;
-  margin-bottom: 19px;
-}
-
-.booking-hero__button {
-  color: var.$color-neutral;
-  padding: 1.5625rem 3.4375rem;
-  border: 1px solid var.$color-neutral;
-}
-
-@media (min-width: 768px) {
-  .booking-hero__logo {
-    align-self: flex-start;
-  }
-  .booking-hero__text {
-    width: 500px;
-    margin-bottom: 38px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .booking-hero__container {
-    align-items: flex-start;
+    @media (min-width: 1440px) {
+      align-items: flex-start;
+    }
   }
 
-  .booking-hero__content-wrapper {
-    flex-direction: row;
-    gap: 125px;
+  &__content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: 1440px) {
+      flex-direction: row;
+      gap: 125px;
+    }
   }
 
-  .booking-hero__content {
-    align-items: flex-start;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: 1440px) {
+      align-items: flex-start;
+    }
   }
 
-  .booking-hero__logo {
-    margin-bottom: 153px;
+  &__logo {
+    margin-bottom: 44px;
+
+    @media (min-width: 768px) {
+      align-self: flex-start;
+    }
+
+    @media (min-width: 1440px) {
+      margin-bottom: 153px;
+    }
   }
 
-  .booking-hero__headline {
-    margin-bottom: 18px;
-  }
-  .booking-hero__text {
-    text-align: start;
-    width: 445px;
-    margin-bottom: 0;
+  &__headline {
+    color: var.$color-neutral;
+    margin-bottom: 13px;
+
+    @media (min-width: 1440px) {
+      margin-bottom: 18px;
+    }
   }
 
-  .booking-hero__button {
-    align-self: flex-end;
+  &__text {
+    color: var.$color-neutral;
+    text-align: center;
+    margin-bottom: 19px;
+
+    @media (min-width: 768px) {
+      width: 500px;
+      margin-bottom: 38px;
+    }
+
+    @media (min-width: 1440px) {
+      text-align: start;
+      width: 445px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__button {
+    color: var.$color-neutral;
+    padding: 1.5625rem 3.4375rem;
+    border: 1px solid var.$color-neutral;
+
+    @media (min-width: 1440px) {
+      align-self: flex-end;
+    }
   }
 }
