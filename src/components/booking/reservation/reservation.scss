@@ -26,6 +26,7 @@ input:not(#res-name, #res-email) {
 .reservation {
   padding-inline: var.$section-padding-sides;
   background-color: var.$light-background;
+  max-height: 515px;
 
   &__container {
     padding: 32px;
@@ -40,12 +41,12 @@ input:not(#res-name, #res-email) {
     border: none;
     margin-bottom: 35px;
   }
-  
+
   &__date,
   &__time {
     display: flex;
   }
-  
+
   &__label {
     padding-bottom: 14px;
   }
@@ -148,4 +149,10 @@ input:not(#res-name, #res-email) {
 .reservation select:hover {
   outline: none;
   box-shadow: none;
+}
+
+@media (min-width: 1440px) {
+  .reservation {
+    max-height: 320px;
+  }
 }

@@ -4,7 +4,7 @@ import "./reservation.scss";
 function renderReservation() {
   const reservationHTML = `
     <section class="reservation" aria-labelledby="reservation-title">
-      <div class="reservation__container max-content-width">
+      <div class="reservation__container">
 
         <!-- Reservation Form -->
         <form class="reservation__form" action="#" method="post" novalidate>
