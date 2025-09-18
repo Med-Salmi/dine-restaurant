@@ -1,0 +1,110 @@
+@use "../../../styles/base/variables" as var;
+
+.reservation {
+  padding-inline: var.$section-padding-sides;
+  background-color: var.$light-background;
+}
+
+.reservation__container {
+  padding: 32px;
+  background-color: var.$color-neutral;
+}
+
+input,
+select {
+  border: none;
+  border-bottom: 1px solid var.$color-neutral-500;
+  padding: 14px 0;
+  padding-left: 16px;
+  background-color: transparent;
+}
+
+#res-name,
+#res-email {
+  width: 100%;
+}
+
+input:not(#res-name, #res-email) {
+  max-width: 73px;
+  margin-right: 14px;
+}
+
+#res-email {
+  margin-bottom: 34px;
+}
+
+.reservation__group {
+  border: none;
+  margin-bottom: 35px;
+}
+.reservation__date,
+.reservation__time {
+  display: flex;
+}
+
+#res-ampm {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-image: url("/src/assets/images/reservation/icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 16px 8px;
+  padding-right: 2.5rem;
+  padding-bottom: 10px;
+}
+
+.reservation__control {
+  width: 5px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.reservation__control--minus {
+  background-image: url("/src/assets/images/reservation/icon-minus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.reservation__control--plus {
+  background-image: url("/src/assets/images/reservation/icon-plus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.reservation__people {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var.$color-neutral-500;
+  padding-bottom: 16px;
+  margin-bottom: 32px;
+  padding-inline: 20px;
+  font-size: var.$font-size-lg;
+  font-weight: var.$font-weight-bold;
+}
+
+.reservation__submit {
+  color: var.$color-neutral;
+  background-color: var.$color-cod-gray;
+  padding: 1.5625rem 3.4375rem;
+  border: 1px solid var.$color-neutral;
+}
+
+.reservation input[type="text"]:focus,
+.reservation input[type="text"]:active,
+.reservation input[type="text"]:hover,
+.reservation input[type="email"]:focus,
+.reservation input[type="email"]:active,
+.reservation input[type="email"]:hover,
+.reservation select:focus,
+.reservation select:active,
+.reservation select:hover {
+  outline: none;
+  box-shadow: none;
+}
