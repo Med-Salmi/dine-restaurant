@@ -1,15 +1,5 @@
 @use "../../../styles/base/variables" as var;
 
-.reservation {
-  padding-inline: var.$section-padding-sides;
-  background-color: var.$light-background;
-}
-
-.reservation__container {
-  padding: 32px;
-  background-color: var.$color-neutral;
-}
-
 input,
 select {
   border: none;
@@ -33,20 +23,111 @@ input:not(#res-name, #res-email) {
   margin-bottom: 34px;
 }
 
-.reservation__group {
-  border: none;
-  margin-bottom: 35px;
-}
-.reservation__date,
-.reservation__time {
-  display: flex;
+.reservation {
+  padding-inline: var.$section-padding-sides;
+  background-color: var.$light-background;
+
+  &__container {
+    padding: 32px;
+    background-color: var.$color-neutral;
+    position: relative;
+    top: -180px;
+    max-width: 540px;
+    margin-inline: auto;
+  }
+
+  &__group {
+    border: none;
+    margin-bottom: 35px;
+  }
+  
+  &__date,
+  &__time {
+    display: flex;
+  }
+  
+  &__label {
+    padding-bottom: 14px;
+  }
+
+  &__control {
+    width: 5px;
+    height: 24px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    // This removes the outline on click and adds a custom one for keyboard focus
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 2px solid var.$color-neutral-500;
+      outline-offset: 2px;
+    }
+
+    &--minus {
+      background-image: url("/src/assets/images/reservation/icon-minus.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+
+    &--plus {
+      background-image: url("/src/assets/images/reservation/icon-plus.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+  }
+
+  &__people {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var.$color-neutral-500;
+    padding-bottom: 16px;
+    margin-bottom: 32px;
+    padding-inline: 20px;
+    font-size: var.$font-size-lg;
+    font-weight: var.$font-weight-bold;
+  }
+
+  &__submit {
+    color: var.$color-neutral;
+    background-color: var.$color-cod-gray;
+    padding: 1.5625rem 3.4375rem;
+    border: 1px solid var.$color-neutral;
+    width: 100%;
+  }
+
+  // Media queries
+  @media (min-width: 768px) {
+    &__group {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+      // We also need to remove the top padding on the label at this breakpoint
+      & > .reservation__label {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  @media (min-width: 1440px) {
+    &__container {
+      top: -400px;
+      right: -280px;
+    }
+  }
 }
 
 #res-ampm {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-
   background-image: url("/src/assets/images/reservation/icon-arrow.svg");
   background-repeat: no-repeat;
   background-position: right 1rem center;
@@ -55,47 +136,7 @@ input:not(#res-name, #res-email) {
   padding-bottom: 10px;
 }
 
-.reservation__control {
-  width: 5px;
-  height: 24px;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-.reservation__control--minus {
-  background-image: url("/src/assets/images/reservation/icon-minus.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-
-.reservation__control--plus {
-  background-image: url("/src/assets/images/reservation/icon-plus.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-
-.reservation__people {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid var.$color-neutral-500;
-  padding-bottom: 16px;
-  margin-bottom: 32px;
-  padding-inline: 20px;
-  font-size: var.$font-size-lg;
-  font-weight: var.$font-weight-bold;
-}
-
-.reservation__submit {
-  color: var.$color-neutral;
-  background-color: var.$color-cod-gray;
-  padding: 1.5625rem 3.4375rem;
-  border: 1px solid var.$color-neutral;
-}
-
+// Global styles for inputs
 .reservation input[type="text"]:focus,
 .reservation input[type="text"]:active,
 .reservation input[type="text"]:hover,

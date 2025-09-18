@@ -31,7 +31,7 @@ function renderReservation() {
 
           <!-- Date -->
           <fieldset class="reservation__group">
-            <legend class="reservation__label">Pick a date</legend>
+            <legend class="reservation__label">Pick a date</legend> 
             <div class="reservation__date">
               <input 
                 id="res-month" 
