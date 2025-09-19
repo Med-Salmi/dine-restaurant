@@ -1,7 +1,6 @@
 @use "../../../styles/base/variables" as var;
 
-input,
-select {
+input {
   border: none;
   border-bottom: 1px solid var.$color-neutral-500;
   padding: 14px 0;
@@ -19,22 +18,17 @@ input:not(#res-name, #res-email) {
   margin-right: 14px;
 }
 
-#res-email {
-  margin-bottom: 34px;
-}
-
 .reservation {
   padding-inline: var.$section-padding-sides;
   background-color: var.$light-background;
-  max-height: 515px;
+//   max-height: 615px;
 
   &__container {
     padding: 32px;
     background-color: var.$color-neutral;
     position: relative;
-    top: -180px;
     max-width: 540px;
-    margin-inline: auto;
+    margin: -220px auto 0; // overlap previous section
   }
 
   &__group {
@@ -45,6 +39,7 @@ input:not(#res-name, #res-email) {
   &__date,
   &__time {
     display: flex;
+    align-items: center;
   }
 
   &__label {
@@ -58,7 +53,6 @@ input:not(#res-name, #res-email) {
     background-color: transparent;
     cursor: pointer;
 
-    // This removes the outline on click and adds a custom one for keyboard focus
     &:focus {
       outline: none;
     }
@@ -103,6 +97,54 @@ input:not(#res-name, #res-email) {
     width: 100%;
   }
 
+  // Custom dropdown styles
+  &__custom-select {
+    position: relative;
+    display: inline-block;
+    width: 73px; // same as hour/minute inputs
+    margin-left: 14px;
+    cursor: pointer;
+
+    &__trigger {
+      border: none;
+      border-bottom: 1px solid var.$color-neutral-500;
+      padding: 14px 0 14px 16px;
+      width: 100%;
+      background: transparent
+        url("/src/assets/images/reservation/icon-arrow.svg") no-repeat right
+        1rem center;
+      background-size: 16px 8px;
+      font-size: var.$font-size-md;
+      text-align: left;
+    }
+
+    &__options {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: var.$color-neutral;
+      border: 1px solid var.$color-neutral-500;
+      z-index: 10;
+      margin-top: 4px;
+    }
+
+    &__option {
+      padding: 8px 12px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: var.$color-neutral-500;
+        color: var.$color-neutral;
+      }
+    }
+
+    &--open &__options {
+      display: block;
+    }
+  }
+
   // Media queries
   @media (min-width: 768px) {
     &__group {
@@ -110,7 +152,7 @@ input:not(#res-name, #res-email) {
       flex-direction: row;
       align-items: center;
       gap: 20px;
-      // We also need to remove the top padding on the label at this breakpoint
+
       & > .reservation__label {
         padding-bottom: 0;
       }
@@ -119,40 +161,34 @@ input:not(#res-name, #res-email) {
 
   @media (min-width: 1440px) {
     &__container {
-      top: -400px;
+      top: -430px;
       right: -280px;
     }
-  }
-}
-
-#res-ampm {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background-image: url("/src/assets/images/reservation/icon-arrow.svg");
-  background-repeat: no-repeat;
-  background-position: right 1rem center;
-  background-size: 16px 8px;
-  padding-right: 2.5rem;
-  padding-bottom: 10px;
-}
-
-// Global styles for inputs
-.reservation input[type="text"]:focus,
-.reservation input[type="text"]:active,
-.reservation input[type="text"]:hover,
-.reservation input[type="email"]:focus,
-.reservation input[type="email"]:active,
-.reservation input[type="email"]:hover,
-.reservation select:focus,
-.reservation select:active,
-.reservation select:hover {
-  outline: none;
-  box-shadow: none;
-}
-
-@media (min-width: 1440px) {
-  .reservation {
     max-height: 320px;
   }
+}
+
+/* Wrap each input or group to align errors */
+.reservation__field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px; /* space between fields */
+  position: relative;
+}
+
+/* Error message styling */
+.reservation__error {
+  color: red;
+  font-size: 0.875rem;
+  margin: 4px 0 0 0; /* small margin right under the input */
+  line-height: 1.2;
+}
+
+/* New invalid state styles */
+.reservation__input--invalid {
+  border-bottom: 1px solid red;
+}
+
+.reservation__field--invalid {
+  border-bottom: 1px solid red;
 }

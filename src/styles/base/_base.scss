@@ -39,9 +39,9 @@ svg {
   height: auto;
 }
 
-// Base button hover effect, excluding events tabs
-button:not(.events__tab, .reservation__control),
-.btn:not(.events__tab, .reservation__control) {
+// Base button hover effect
+button:not(.events__tab, .reservation__control, .booking-hero__button),
+.btn:not(.events__tab, .reservation__control, .booking-hero__button) {
   &:hover {
     background-color: var.$color-neutral;
     color: var.$color-cod-gray;
