@@ -7,10 +7,10 @@ function renderEventsSection() {
 
         <!-- Event Image -->
         <picture class="events__image">
-          <source srcset="src/assets/images/events/family-gathering-mobile.jpg 1x, src/assets/images/events/family-gathering-mobile@2x.jpg 2x" media="(max-width: 480px)">
-          <source srcset="src/assets/images/events/family-gathering-tablet.jpg 1x, src/assets/images/events/family-gathering-tablet@2x.jpg 2x" media="(max-width: 1024px)">
-          <img src="src/assets/images/events/family-gathering-desktop.jpg" 
-               srcset="src/assets/images/events/family-gathering-desktop@2x.jpg 2x" 
+          <source srcset="/assets/images/events/family-gathering-mobile.jpg 1x, src/assets/images/events/family-gathering-mobile@2x.jpg 2x" media="(max-width: 480px)">
+          <source srcset="/assets/images/events/family-gathering-tablet.jpg 1x, src/assets/images/events/family-gathering-tablet@2x.jpg 2x" media="(max-width: 1024px)">
+          <img src="/assets/images/events/family-gathering-desktop.jpg" 
+               srcset="/assets/images/events/family-gathering-desktop@2x.jpg 2x" 
                alt="Family gathering at our restaurant">
         </picture>
 
