@@ -6,7 +6,6 @@ A responsive 2-page restaurant website built to match a given design challenge f
 
 - [Features](#features)
 - [Tech Stack](#tech-stack)
-- [Usage](#usage)
 
 ## Features
 
