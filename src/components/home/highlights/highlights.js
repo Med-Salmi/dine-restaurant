@@ -9,7 +9,7 @@ function renderHighlightsSection() {
         <!-- Header -->
         <div class="highlights__header">
           <img 
-            src="src/assets/images/features/pattern-divide.svg" 
+            src="/images/features/pattern-divide.svg" 
             alt="" 
             class="highlights__divider" 
           />
@@ -33,18 +33,18 @@ function renderHighlightsSection() {
             <picture>
               <!-- Tablet & Desktop -->
               <source 
-                srcset="src/assets/images/highlights/salmon-desktop-tablet.jpg 1x, 
-                        src/assets/images/highlights/salmon-desktop-tablet@2x.jpg 2x" 
+                srcset="/images/highlights/salmon-desktop-tablet.jpg 1x, 
+                        /images/highlights/salmon-desktop-tablet@2x.jpg 2x" 
                 media="(min-width: 768px)" 
               />
               <!-- Mobile -->
               <source 
-                srcset="src/assets/images/highlights/salmon-mobile.jpg 1x, 
-                        src/assets/images/highlights/salmon-mobile@2x.jpg 2x" 
+                srcset="/images/highlights/salmon-mobile.jpg 1x, 
+                        /images/highlights/salmon-mobile@2x.jpg 2x" 
                 media="(max-width: 767px)" 
               />
               <img 
-                src="src/assets/images/highlights/salmon-mobile.jpg" 
+                src="/images/highlights/salmon-mobile.jpg" 
                 alt="Seared Salmon Fillet" 
                 class="highlights__image" 
               />
@@ -64,18 +64,18 @@ function renderHighlightsSection() {
             <picture>
               <!-- Tablet & Desktop -->
               <source 
-                srcset="src/assets/images/highlights/beef-desktop-tablet.jpg 1x, 
-                        src/assets/images/highlights/beef-desktop-tablet@2x.jpg 2x" 
+                srcset="/images/highlights/beef-desktop-tablet.jpg 1x, 
+                        /images/highlights/beef-desktop-tablet@2x.jpg 2x" 
                 media="(min-width: 768px)" 
               />
               <!-- Mobile -->
               <source 
-                srcset="src/assets/images/highlights/beef-mobile.jpg 1x, 
-                        src/assets/images/highlights/beef-mobile@2x.jpg 2x" 
+                srcset="/images/highlights/beef-mobile.jpg 1x, 
+                        /images/highlights/beef-mobile@2x.jpg 2x" 
                 media="(max-width: 767px)" 
               />
               <img 
-                src="src/assets/images/highlights/beef-mobile.jpg" 
+                src="/images/highlights/beef-mobile.jpg" 
                 alt="Rosemary Filet Mignon" 
                 class="highlights__image" 
               />
@@ -95,18 +95,18 @@ function renderHighlightsSection() {
             <picture>
               <!-- Tablet & Desktop -->
               <source 
-                srcset="src/assets/images/highlights/chocolate-desktop-tablet.jpg 1x, 
-                        src/assets/images/highlights/chocolate-desktop-tablet@2x.jpg 2x" 
+                srcset="/images/highlights/chocolate-desktop-tablet.jpg 1x, 
+                        /images/highlights/chocolate-desktop-tablet@2x.jpg 2x" 
                 media="(min-width: 768px)" 
               />
               <!-- Mobile -->
               <source 
-                srcset="src/assets/images/highlights/chocolate-mobile.jpg 1x, 
-                        src/assets/images/highlights/chocolate-mobile@2x.jpg 2x" 
+                srcset="/images/highlights/chocolate-mobile.jpg 1x, 
+                        /images/highlights/chocolate-mobile@2x.jpg 2x" 
                 media="(max-width: 767px)" 
               />
               <img 
-                src="src/assets/images/highlights/chocolate-mobile.jpg" 
+                src="/images/highlights/chocolate-mobile.jpg" 
                 alt="Summer Fruit Chocolate Mousse" 
                 class="highlights__image" 
               />
