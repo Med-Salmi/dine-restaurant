@@ -10,17 +10,17 @@ function renderFeaturesSection() {
         <div class="features__item">
           <picture class="features__image">
             <!-- Mobile -->
-            <source srcset="src/assets/images/features/enjoyable-place-mobile.jpg 1x, src/assets/images/features/enjoyable-place-mobile@2x.jpg 2x" media="(max-width: 480px)">
+            <source srcset="/images/features/enjoyable-place-mobile.jpg 1x, src/assets/images/features/enjoyable-place-mobile@2x.jpg 2x" media="(max-width: 480px)">
             <!-- Tablet -->
-            <source srcset="src/assets/images/features/enjoyable-place-tablet.jpg 1x, src/assets/images/features/enjoyable-place-tablet@2x.jpg 2x" media="(max-width: 1024px)">
+            <source srcset="/images/features/enjoyable-place-tablet.jpg 1x, src/assets/images/features/enjoyable-place-tablet@2x.jpg 2x" media="(max-width: 1024px)">
             <!-- Desktop -->
-            <img src="src/assets/images/features/enjoyable-place-desktop.jpg" 
-                 srcset="src/assets/images/features/enjoyable-place-desktop@2x.jpg 2x" 
+            <img src="/images/features/enjoyable-place-desktop.jpg" 
+                 srcset="/images/features/enjoyable-place-desktop@2x.jpg 2x" 
                  alt="Enjoyable place for all the family">
           </picture>
 
           <div class="features__content">
-            <img src="src/assets/images/features/pattern-divide.svg" alt="" class="features__divider">
+            <img src="/images/features/pattern-divide.svg" alt="" class="features__divider">
 
             <h2 class="features__title">Enjoyable place <br> for all the family</h2>
             <p class="features__description">
@@ -34,17 +34,17 @@ function renderFeaturesSection() {
         <div class="features__item">
           <picture class="features__image">
             <!-- Mobile -->
-            <source srcset="src/assets/images/features/locally-sourced-mobile.jpg 1x, src/assets/images/features/locally-sourced-mobile@2x.jpg 2x" media="(max-width: 480px)">
+            <source srcset="/images/features/locally-sourced-mobile.jpg 1x, src/assets/images/features/locally-sourced-mobile@2x.jpg 2x" media="(max-width: 480px)">
             <!-- Tablet -->
-            <source srcset="src/assets/images/features/locally-sourced-tablet.jpg 1x, src/assets/images/features/locally-sourced-tablet@2x.jpg 2x" media="(max-width: 1024px)">
+            <source srcset="/images/features/locally-sourced-tablet.jpg 1x, src/assets/images/features/locally-sourced-tablet@2x.jpg 2x" media="(max-width: 1024px)">
             <!-- Desktop -->
-            <img src="src/assets/images/features/locally-sourced-desktop.jpg" 
-                 srcset="src/assets/images/features/locally-sourced-desktop@2x.jpg 2x" 
+            <img src="/images/features/locally-sourced-desktop.jpg" 
+                 srcset="/images/features/locally-sourced-desktop@2x.jpg 2x" 
                  alt="Fresh ingredients from our farm and local fishery">
           </picture>
 
           <div class="features__content">
-            <img src="src/assets/images/features/pattern-divide.svg" alt="" class="features__divider">
+            <img src="/images/features/pattern-divide.svg" alt="" class="features__divider">
 
             <h2 class="features__title">The most locally <br> sourced food</h2>
             <p class="features__description">
