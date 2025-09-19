@@ -3,8 +3,8 @@
 
 .cta {
   background-image: image-set(
-    "src/assets/images/cta/ready-bg-mobile.jpg" 1x,
-    "src/assets/images/cta/ready-bg-mobile@2x.jpg" 2x
+    "/images/cta/ready-bg-mobile.jpg" 1x,
+    "/images/cta/ready-bg-mobile@2x.jpg" 2x
   );
   background-size: cover;
   background-position: center;
@@ -12,15 +12,15 @@
 
   @media (min-width: 768px) {
     background-image: image-set(
-      "src/assets/images/cta/ready-bg-tablet.jpg" 1x,
-      "src/assets/images/cta/ready-bg-tablet@2x.jpg" 2x
+      "/images/cta/ready-bg-tablet.jpg" 1x,
+      "/images/cta/ready-bg-tablet@2x.jpg" 2x
     );
   }
 
   @media (min-width: 1440px) {
     background-image: image-set(
-      "src/assets/images/cta/ready-bg-desktop.jpg" 1x,
-      "src/assets/images/cta/ready-bg-desktop@2x.jpg" 2x
+      "/images/cta/ready-bg-desktop.jpg" 1x,
+      "/images/cta/ready-bg-desktop@2x.jpg" 2x
     );
   }
 

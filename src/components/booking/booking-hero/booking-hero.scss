@@ -5,25 +5,25 @@
   background-size: cover;
   background-position: center;
   min-height: 100vh;
-  background-image: url("/src/assets/images/booking-hero/hero-bg-mobile.jpg");
+  background-image: url("/images/booking-hero/hero-bg-mobile.jpg");
 
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    background-image: url("/src/assets/images/booking-hero/hero-bg-mobile@2x.jpg");
+    background-image: url("/images/booking-hero/hero-bg-mobile@2x.jpg");
   }
 
   @media (min-width: 768px) and (max-width: 1023px) {
-    background-image: url("/src/assets/images/booking-hero/hero-bg-tablet.jpg");
+    background-image: url("/images/booking-hero/hero-bg-tablet.jpg");
 
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-      background-image: url("/src/assets/images/booking-hero/hero-bg-tablet@2x.jpg");
+      background-image: url("/images/booking-hero/hero-bg-tablet@2x.jpg");
     }
   }
 
   @media (min-width: 1024px) {
-    background-image: url("/src/assets/images/booking-hero/hero-bg-desktop.jpg");
+    background-image: url("/images/booking-hero/hero-bg-desktop.jpg");
 
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-      background-image: url("/src/assets/images/booking-hero/hero-bg-desktop@2x.jpg");
+      background-image: url("/images/booking-hero/hero-bg-desktop@2x.jpg");
     }
   }
 
