@@ -6,7 +6,6 @@
   background-position: center;
   min-height: 100vh;
 
-  // Mobile default
   background-image: url("/src/assets/images/hero/hero-bg-mobile.jpg");
 
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -61,14 +60,12 @@
     margin-bottom: 152px;
   }
 
-  // Tablet
   @media screen and (min-width: 768px) {
     &__logo {
       margin-bottom: 38px;
     }
   }
 
-  // Desktop
   @media screen and (min-width: 1024px) {
     &__container {
       justify-content: flex-start;

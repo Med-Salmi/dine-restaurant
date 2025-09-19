@@ -74,7 +74,7 @@ function renderReservation() {
 // Custom dropdown logic
 function initCustomSelect() {
   const select = document.getElementById("res-ampm-select");
-  if (!select) return; // Guard clause in case the element doesn't exist
+  if (!select) return; 
 
   const trigger = select.querySelector(".reservation__custom-select__trigger");
   const options = select.querySelectorAll(
