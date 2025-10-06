@@ -34,9 +34,9 @@ function renderFeaturesSection() {
         <div class="features__item">
           <picture class="features__image">
             <!-- Mobile -->
-            <source srcset="/images/features/locally-sourced-mobile.jpg 1x, src/assets/images/features/locally-sourced-mobile@2x.jpg 2x" media="(max-width: 480px)">
+            <source srcset="/images/features/locally-sourced-mobile.jpg 1x, /images/features/locally-sourced-mobile@2x.jpg 2x" media="(max-width: 480px)">
             <!-- Tablet -->
-            <source srcset="/images/features/locally-sourced-tablet.jpg 1x, src/assets/images/features/locally-sourced-tablet@2x.jpg 2x" media="(max-width: 1024px)">
+            <source srcset="/images/features/locally-sourced-tablet.jpg 1x, /images/features/locally-sourced-tablet@2x.jpg 2x" media="(max-width: 1024px)">
             <!-- Desktop -->
             <img src="/images/features/locally-sourced-desktop.jpg" 
                  srcset="/images/features/locally-sourced-desktop@2x.jpg 2x" 
