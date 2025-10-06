@@ -49,12 +49,7 @@ function renderReservation() {
             <p class="reservation__error"></p>
           </fieldset>
 
-          <!-- Number of People -->
-          <div class="reservation__people">
-            <button type="button" class="reservation__control reservation__control--minus" aria-label="Decrease number of people"></button>
-            <span class="reservation__count">2 people</span>
-            <button type="button" class="reservation__control reservation__control--plus" aria-label="Increase number of people"></button>
-          </div>
+         
 
           <!-- Submit -->
           <button type="submit" class="reservation__submit btn">Make a reservation</button>
@@ -74,7 +69,7 @@ function renderReservation() {
 // Custom dropdown logic
 function initCustomSelect() {
   const select = document.getElementById("res-ampm-select");
-  if (!select) return; 
+  if (!select) return;
 
   const trigger = select.querySelector(".reservation__custom-select__trigger");
   const options = select.querySelectorAll(
