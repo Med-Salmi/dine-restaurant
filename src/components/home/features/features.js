@@ -10,9 +10,9 @@ function renderFeaturesSection() {
         <div class="features__item">
           <picture class="features__image">
             <!-- Mobile -->
-            <source srcset="/images/features/enjoyable-place-mobile.jpg 1x, src/assets/images/features/enjoyable-place-mobile@2x.jpg 2x" media="(max-width: 480px)">
+            <source srcset="/images/features/enjoyable-place-mobile.jpg 1x, /images/features/enjoyable-place-mobile@2x.jpg 2x" media="(max-width: 480px)">
             <!-- Tablet -->
-            <source srcset="/images/features/enjoyable-place-tablet.jpg 1x, src/assets/images/features/enjoyable-place-tablet@2x.jpg 2x" media="(max-width: 1024px)">
+            <source srcset="/images/features/enjoyable-place-tablet.jpg 1x, /images/features/enjoyable-place-tablet@2x.jpg 2x" media="(max-width: 1024px)">
             <!-- Desktop -->
             <img src="/images/features/enjoyable-place-desktop.jpg" 
                  srcset="/images/features/enjoyable-place-desktop@2x.jpg 2x" 

@@ -48,9 +48,6 @@ function renderReservation() {
             </div>
             <p class="reservation__error"></p>
           </fieldset>
-
-         
-
           <!-- Submit -->
           <button type="submit" class="reservation__submit btn">Make a reservation</button>
         </form>
@@ -69,7 +66,7 @@ function renderReservation() {
 // Custom dropdown logic
 function initCustomSelect() {
   const select = document.getElementById("res-ampm-select");
-  if (!select) return;
+  if (!select) return; 
 
   const trigger = select.querySelector(".reservation__custom-select__trigger");
   const options = select.querySelectorAll(
